@@ -177,7 +177,7 @@ let sideMenuList = [
 let Project1={
     title:'Collapsed Gray',
     bImage:CG_B,
-    videeo:null,
+    videeo:"https://youtu.be/l6aSJbE3W1s",
     imageSet:[
         {
             url:CG_G1   
@@ -237,7 +237,7 @@ let Project1={
 let Project2={
     title:'Apoca Force',
     bImage:A_B,
-    videeo:null,
+    videeo:"https://youtu.be/88P6S8cuOD8",
     imageSet:[
         {
             url:A_G1        
@@ -292,7 +292,7 @@ let Project2={
 let Project3={
     title:'iSeikai',
     bImage:I_B,
-    videeo:null,
+    videeo:"https://youtu.be/3Z7wRtQ27V4",
     imageSet:[
         {
             url:I_G1
@@ -451,7 +451,7 @@ let Project5={
 let Project6={
     title:'Awaken2050',
     bImage:Aw_B,
-    videeo:null,
+    videeo:"https://youtu.be/A00v60RZvx0",
     imageSet:[
         {
             url:Aw_G1

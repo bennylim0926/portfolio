@@ -6,13 +6,15 @@ import ImageSlider from './imageSlider';
 // import { Project1 } from './Data';
 import { Link } from '@chakra-ui/react';
 import { Divider } from '@chakra-ui/react';
+import ReacPlayer from 'react-player'
 
 let VideoPlayer = ({ videoUrl }) => {
     return (
         <div className="videoPlayer">
-            <video width="550" controls>
+            {/* <video width="550" controls>
                 <source src={videoUrl} type="video/mp4" />
-            </video>
+            </video> */}
+            <ReacPlayer url={videoUrl} controls={true}></ReacPlayer>
         </div>
     )
 }
