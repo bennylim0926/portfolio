@@ -1,7 +1,7 @@
 import './Css/index.css'
 import * as React from "react";
 import ReactDOM from "react-dom";
-import { Router, Route, Switch } from 'react-router-dom';
+import { Router, Route, Switch,HashRouter } from 'react-router-dom';
 import { Link as Rlink } from "react-router-dom";
 import { createBrowserHistory } from 'history';
 import SideMenu from './React/sideMenu';
@@ -93,7 +93,7 @@ class Footer extends React.Component {
 function App({ Component }) {  
   return (
     <ChakraProvider>
-      <Router history={createBrowserHistory()}>
+      <HashRouter>
         <ScrollToTop />
         <NavigationBar />
         <Switch>
@@ -121,7 +121,7 @@ function App({ Component }) {
           )} />
         </Switch>
         <Footer />
-      </Router>
+      </HashRouter>
     </ChakraProvider>
   )
 }
