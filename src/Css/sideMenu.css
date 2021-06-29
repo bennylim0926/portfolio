@@ -1,0 +1,45 @@
+.sideMenu {
+    position: fixed;
+    background-color: #89ABE3FF;    
+    width:180px;
+    transition: 1s;
+}
+
+@media screen and (max-width:800px) {
+    .sideMenu{        
+        background-color: #89ABE3FF;
+        width: 0px;
+        transition: 1s;
+    }
+    
+}
+
+.sideMenuList{
+    position:fixed
+}
+
+.body{
+    overflow-x: hidden;
+}
+
+.listTitle{
+    font-size: 25px;
+    list-style-type: none;
+    text-align: center;
+}
+.listChild{
+    font-size: 14px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.cButton{
+    display: none;
+
+}
+
+
+
+
+
+

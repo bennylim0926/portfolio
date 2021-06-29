@@ -1,0 +1,80 @@
+
+
+.projectImageContainer{
+    display: flex;
+}
+
+.projectBackground{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    min-height: 50vw;
+    /* background-image: url(../PortfolioImages/C_snapShot2.png); */
+    opacity: 0.8;
+    background-size:cover;        
+
+}   
+
+.backgroundText{   
+    font-size: 20vw;
+    text-align: center;
+    color: white;   
+    opacity: 1;
+    flex: 1 1 100%;    
+}
+
+.galleryContainer{   
+    display: flex; 
+    flex-wrap: wrap;
+    background-color: #FCF6F5FF;
+}
+.ImageGallery{
+    background-color: #FCF6F5FF;
+}
+
+.galleryChild{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1 1 50%;
+}
+.videoPlayer{
+    margin: 20px 5px 20px 5px;
+}
+
+@media screen and (max-width: 900px) {
+    .galleryChild{
+        flex: 0 0 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.projectDescription{
+        background-color: #FCF6F5FF;
+        margin: auto;
+}
+
+.DescriptionContent{
+    padding-top: 40px;
+    margin-left: 100px;
+    width: 85%;
+    text-align: justify;
+}
+
+.DescriptionContent:last-child{
+    padding-top: 30px;
+    margin-left: 100px;
+    width: 50%;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.infoList{
+    list-style-type:none;
+    
+}
+.infoTitle{
+    font-weight: bold;
+}
