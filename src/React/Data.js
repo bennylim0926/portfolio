@@ -47,12 +47,12 @@ let HompageData ={
         {
             url:CollapsedGrey,
             alt:'CollapsedGray',
-            linkTo:'/portfolio/CollapsedGray',
+            linkTo:'/mywork/CollapsedGray',
         },
         {
             url:ApocaForce,
             alt:'ApocaForce',
-            linkTo:'/portfolio/ApocaForce',
+            linkTo:'/mywork/ApocaForce',
         },
     ]
 }
@@ -66,7 +66,7 @@ let PortfolioData={
             imageUrl:CollapsedGrey,
             imageTitle:'Collapsed Gray',
             imageDescription:"An FYP project where the objective is to create a 3D action role play game in which the player plays as a protagonist who was partly infected during an experiment carried on in an underground facility. To find out the truth of the experiment, player needs to explore the underground facility, and fight against the mutants that trying to attack her.",
-            linkTo:'/portfolio/CollapsedGray',
+            linkTo:'/mywork/CollapsedGray',
             id:'g1',
             style: {
                 width: 512,
@@ -77,7 +77,7 @@ let PortfolioData={
             imageUrl:ApocaForce,
             imageTitle:'Apoca Force',
             imageDescription: "A studio project where the objective is to create a 3D tower defence game which the anime characters act as the ’tower‘ who are trying to save their base from the zombies. The player can only deploy the unit at certain points then move the unit to a strategic position based on where the zombies are spawned, but be careful, a moving unit is unable to attack and it cost you some money also!",
-            linkTo:'/portfolio/ApocaForce',
+            linkTo:'/mywork/ApocaForce',
             id:'g2',
             style: {
                 width: 512,
@@ -88,7 +88,7 @@ let PortfolioData={
             imageUrl:Iseikai,
             imageTitle:'Iseikai',
             imageDescription:"A client project with Anime Festival Asia(AFA) to create a 2D mobile game which Seika as the main protagonist in the game. Seika was brought to the isekai world, and she is tasked to defeat all the monster in the isekai world before going back to the original world that she used to live. As Seika has no experience combat with the monsters using a sword, so she throws the sword towards the monster instead...",
-            linkTo:'/portfolio/Iseikai',
+            linkTo:'/mywork/Iseikai',
             id:'g3',
             style: {
                 width: 512,
@@ -99,7 +99,7 @@ let PortfolioData={
             imageUrl:DrawMania,
             imageTitle:'DrawMania',
             imageDescription:"A mini project where the objective is to create a 2D physics-based game. The player can control the gravity which allows the player to fall downwards or fly upwards. Before that, the player has to draw a path with a limit that leads the player to the checkpoint. Be aware of the spikes and avoid fly out of the screen while trying to collect all the stars! ",
-            linkTo:'/portfolio/DrawMania',
+            linkTo:'/mywork/DrawMania',
             id:'g4',
             style: {
                 width: 512,
@@ -110,7 +110,7 @@ let PortfolioData={
             imageUrl:HumanSystemAr,
             imageTitle:'Human System AR',
             imageDescription:"A mini project where the objective is to create an AR app using Vuforia and Unity. This app allows user to learn the simple human system by placing certain markers in front of the camera with this app open. The user can observe the screen to see relevant human organ to appear above the markers. Try to combine different markers to see a human system that is relevant to the organ.",
-            linkTo:'/portfolio/HumanSystemAr',
+            linkTo:'/mywork/HumanSystemAr',
             id:'g5',
             style: {
                 width: 512,
@@ -121,7 +121,7 @@ let PortfolioData={
             imageUrl:Awaken2050,
             imageTitle:'Awaken 2050',
             imageDescription:"A mini project where the objective is to create a VR application using Unity. In this game, the player can play as an on-mission agent that needs to kill awaken androids that kill innocent people in the city. However, you have lost your gun and thermal-detect glasses in your last mission, so you need to find out all your items before conquer with the androids!",
-            linkTo:'/portfolio/Awaken2050',
+            linkTo:'/mywork/Awaken2050',
             id:'g6',
             style: {
                 width: 512,
@@ -137,11 +137,11 @@ let sideMenuList = [
         items: [
             {
                 Name: "Collapsed Gray",
-                Link: "/portfolio/#g1",
+                Link: "#g1",
             },
             {
                 Name: "Apoca Force",
-                Link: "/portfolio/#g2",
+                Link: "#g2",
             },
         ]
     },
@@ -150,11 +150,11 @@ let sideMenuList = [
         items: [
             {
                 Name: "iSeikai",
-                Link: "/portfolio/#g3",
+                Link: "#g3",
             },
             {
                 Name: "Draw Mania",
-                Link: "/portfolio/#g4",
+                Link: "#g4",
             },            
         ]
     },
@@ -163,11 +163,11 @@ let sideMenuList = [
         items: [
             {
                 Name: "Human System AR",
-                Link: "/portfolio/#g5",
+                Link: "#g5",
             },
             {
                 Name: "Awaken 2050",
-                Link: "/portfolio/#g6",
+                Link: "#g6",
             },
         ]
     },

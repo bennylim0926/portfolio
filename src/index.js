@@ -42,7 +42,7 @@ class NavigationBar extends React.Component {
       },
       {
         itemName: 'Portfolio',
-        itemLink: '/portfolio',
+        itemLink: '/mywork',
         cName: 'navItem',
       },
       // {
@@ -93,34 +93,34 @@ class Footer extends React.Component {
 function App({ Component }) {  
   return (
     <ChakraProvider>
-      <Router history={createBrowserHistory()}>
+      <HashRouter>  {/* history={createBrowserHistory()}> */}
         <ScrollToTop />
         <NavigationBar />
         <Switch>          
           <Route path="/" exact component={Home} />
-          <Route path="/portfolio" exact component={Portfolio} />
+          <Route path="/mywork" exact component={Portfolio} />
           <Route path="/game" component={Tictactoe} />
-          <Route path="/portfolio/CollapsedGray" render={() => (
+          <Route path="/mywork/CollapsedGray" render={() => (
             <ProjectDetails project={Project1} />
           )} />
-          <Route path="/portfolio/ApocaForce" render={() => (
+          <Route path="/mywork/ApocaForce" render={() => (
             <ProjectDetails project={Project2} />
           )} />
-          <Route path="/portfolio/Iseikai" render={() => (
+          <Route path="/mywork/Iseikai" render={() => (
             <ProjectDetails project={Project3} />
           )} />
-          <Route path="/portfolio/DrawMania" render={() => (
+          <Route path="/mywork/DrawMania" render={() => (
             <ProjectDetails project={Project4} />
           )} />
-          <Route path="/portfolio/HumanSystemAr" render={() => (
+          <Route path="/mywork/HumanSystemAr" render={() => (
             <ProjectDetails project={Project5} />
           )} />
-          <Route path="/portfolio/Awaken2050" render={() => (
+          <Route path="/mywork/Awaken2050" render={() => (
             <ProjectDetails project={Project6} />
           )} />
         </Switch>
         <Footer />
-      </Router>
+      </HashRouter>
     </ChakraProvider>
   )
 }

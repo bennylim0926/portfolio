@@ -3,7 +3,9 @@ import '../Css/sideMenu.css';
 import { Link } from '@chakra-ui/react';
 import { Button } from '@chakra-ui/react'
 import { CloseIcon } from '@chakra-ui/icons'
+import { Heading } from '@chakra-ui/layout'
 import {sideMenuList} from './Data'
+import { HashLink } from 'react-router-hash-link';
 
 class SideMenu extends React.Component {
     render() {
@@ -15,7 +17,7 @@ class SideMenu extends React.Component {
                 {sideMenuList.map((current, index) => {
                     return (
                         <li className="listTitle">
-                            <a href={current.items.Link}> {current.title} </a>
+                            <Heading size="md"> {current.title} </Heading>
                             <ListChildren items={current.items} handleClick={current.handleClick} />
                         </li>
                     )
@@ -31,8 +33,8 @@ const ListChildren = ({ items, handleClick }) => {
         return (
             <li className="listChild">
                 <button onClick={handleClick}>
-                    <Link href={current.Link}> {current.Name}
-                    </Link>
+                    <HashLink to={current.Link}> {current.Name}
+                    </HashLink>
                 </button>
             </li>
         )
