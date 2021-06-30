@@ -58,12 +58,13 @@ let ProjectRole = ({ role }) => {
     )
 }
 
-let DownloadLink = ({ link }) => {
+let DownloadLink = ({ link,ButtonName }) => {
     return (
         <div className="DescriptionContent">
-            <Link href={link}>
-                <Button>Download Link</Button>
-            </Link>
+            {ButtonName === null ? <div/> :<Link href={link} isExternal>
+                <Button>{ButtonName}</Button>
+            </Link>}
+            
         </div>
     )
 }
@@ -80,7 +81,7 @@ function ProjectDetails({ project }) {
                         <div className="projectDescription">
                             <ProjectDescription description={project.summary} />
                             <ProjectRole role={project.projectInfo} />
-                            <DownloadLink link={project.downloadLink} />
+                            <DownloadLink link={project.downLoadLink} ButtonName={project.buttonName} />
                         </div>
                     </div>
                     <div className="galleryChild">

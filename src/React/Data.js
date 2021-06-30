@@ -106,17 +106,17 @@ let PortfolioData={
                 heigh: 288,
             },
         },
-        {
-            imageUrl:HumanSystemAr,
-            imageTitle:'Human System AR',
-            imageDescription:"A mini project where the objective is to create an AR app using Vuforia and Unity. This app allows user to learn the simple human system by placing certain markers in front of the camera with this app open. The user can observe the screen to see relevant human organ to appear above the markers. Try to combine different markers to see a human system that is relevant to the organ.",
-            linkTo:'/mywork/HumanSystemAr',
-            id:'g5',
-            style: {
-                width: 512,
-                heigh: 288,
-            },
-        },
+        // {
+        //     imageUrl:HumanSystemAr,
+        //     imageTitle:'Human System AR',
+        //     imageDescription:"A mini project where the objective is to create an AR app using Vuforia and Unity. This app allows user to learn the simple human system by placing certain markers in front of the camera with this app open. The user can observe the screen to see relevant human organ to appear above the markers. Try to combine different markers to see a human system that is relevant to the organ.",
+        //     linkTo:'/mywork/HumanSystemAr',
+        //     id:'g5',
+        //     style: {
+        //         width: 512,
+        //         heigh: 288,
+        //     },
+        // },
         {
             imageUrl:Awaken2050,
             imageTitle:'Awaken 2050',
@@ -161,10 +161,10 @@ let sideMenuList = [
     {
         title: "Application",
         items: [
-            {
-                Name: "Human System AR",
-                Link: "#g5",
-            },
+            // {
+            //     Name: "Human System AR",
+            //     Link: "#g5",
+            // },
             {
                 Name: "Awaken 2050",
                 Link: "#g6",
@@ -230,6 +230,7 @@ let Project1={
             description:""
         },
     ],
+    buttonName:null,
     downLoadLink:'',
 }
 
@@ -285,7 +286,8 @@ let Project2={
             description:""
         },
     ],
-    downLoadLink:'',
+    buttonName:'Play on Itch.io',
+    downLoadLink:'https://blim26.itch.io/apocaforce',
 }
 
 /*----------------PROJECTS-3----------------*/
@@ -333,7 +335,8 @@ let Project3={
             description:""
         },
     ],
-    downLoadLink:'',
+    buttonName:'Download from Playstore',
+    downLoadLink:'https://play.google.com/store/apps/details?id=com.DGDD.iSeikai',
 }
 /*----------------PROJECTS-4----------------*/
 let Project4={
@@ -389,7 +392,8 @@ let Project4={
             description:""
         },
     ],
-    downLoadLink:'',
+    buttonName:'Play Online',
+    downLoadLink:'https://bennylim0926.github.io/PhysicsGame-Game/',
 }
 /*----------------PROJECTS-5----------------*/
 let Project5={
@@ -445,6 +449,7 @@ let Project5={
             description:""
         },
     ],
+    buttonName:null,
     downLoadLink:'',
 }
 /*----------------PROJECTS-6----------------*/
@@ -501,6 +506,7 @@ let Project6={
             description:""
         },
     ],
+    buttonName:null,   
     downLoadLink:'',
 }
 

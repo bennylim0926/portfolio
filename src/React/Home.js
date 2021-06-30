@@ -31,7 +31,7 @@ function TitleSection() {
 function ImageSection() {
     const history = useHistory();
     function handleClick(){
-        history.push('/portfolio');
+        history.push('/mywork');
     }    
     return (
         <div className="imageSection">
