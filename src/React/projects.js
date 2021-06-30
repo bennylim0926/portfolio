@@ -11,10 +11,7 @@ import ReacPlayer from 'react-player'
 let VideoPlayer = ({ videoUrl }) => {
     return (
         <div className="videoPlayer">
-            {/* <video width="550" controls>
-                <source src={videoUrl} type="video/mp4" />
-            </video> */}
-            <ReacPlayer url={videoUrl} controls={true}></ReacPlayer>
+            <ReacPlayer className="react-Player" url={videoUrl} controls={true} width="100%" height="100%"></ReacPlayer>
         </div>
     )
 }
@@ -87,9 +84,7 @@ function ProjectDetails({ project }) {
                         </div>
                     </div>
                     <div className="galleryChild">
-                        {project.videeo !== null ? <VideoPlayer videoUrl={project.videeo} /> : <div />}
-                        {/* <VideoPlayer videoUrl={project.videeo} /> */}
-
+                            {project.videeo !== null ? <VideoPlayer videoUrl={project.videeo} /> : <div />}
                     </div>
                 </div>
                 <Divider />

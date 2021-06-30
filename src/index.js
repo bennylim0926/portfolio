@@ -93,11 +93,10 @@ class Footer extends React.Component {
 function App({ Component }) {  
   return (
     <ChakraProvider>
-      <HashRouter>
+      <Router history={createBrowserHistory()}>
         <ScrollToTop />
         <NavigationBar />
-        <Switch>
-          
+        <Switch>          
           <Route path="/" exact component={Home} />
           <Route path="/portfolio" exact component={Portfolio} />
           <Route path="/game" component={Tictactoe} />
@@ -121,7 +120,7 @@ function App({ Component }) {
           )} />
         </Switch>
         <Footer />
-      </HashRouter>
+      </Router>
     </ChakraProvider>
   )
 }
